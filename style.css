@@ -70,13 +70,15 @@ label{
 }
 .input1{
   margin-bottom: 10px;
+  padding: 5px;
 }
 .input2{
-  padding-left:  200px;
-  margin-bottom: 5px;
+  margin-left: 200px;
+  padding-bottom: 10px;
 }
 input{
-  width: 15opx;
+  width: 100%;
+  max-width: 250px;
   height: 25px;
   border-radius: 5px;
 }
@@ -86,6 +88,7 @@ input{
 #list{
   border: 2px solid black;
   min-width: 200px;
+  max-width: 100%;
   width: max-content;
   height: auto;
   overflow: auto;
@@ -127,4 +130,35 @@ footer{
 }
 #copy{
   color: aquamarine;
+}
+
+@media (max-width: 768px) {
+  #container {
+      width: 95%;
+      max-height: none; 
+  }
+
+  input {
+      max-width: 100%; 
+  }
+
+  button {
+      font-size: 12px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 20px; 
+  }
+
+  button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  #icons i {
+      font-size: 20px;
+  }
 }
